@@ -17,5 +17,7 @@ spec:
     spec:
       containers:
         - name: hello-world-pod
-          image: kubecat
-          imagePullPolicy: Never
+          image: ghebarion/muie-psd
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081

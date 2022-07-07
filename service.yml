@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myservice
+  labels:
+    run: myservice
+spec:
+  ports:
+    - port: 8083
+      protocol: TCP
+  selector:
+    app: java-api
+  type: NodePort
